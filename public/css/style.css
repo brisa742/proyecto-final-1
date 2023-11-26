@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: bisque;
+}
+
+/* estilos comunes */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/* header */
+
+.descuento{
+    border-style: solid;
+    border-color: rgb(236, 198, 166);
+    background-color:  rgb(236, 198, 166);
+    text-align: center;
+}
+
+header {
+    padding: 60px;
+    text-align: center;
+    background-image: url(../img/descarga.jpg);
+    border-style: solid;
+    border-width: 5px;
+    border-color: bisque;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header div{
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 800px) {
+    header {
+        background-position: center;
+    }
+}
+
+/*navbar*/
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(236, 198, 166);
+    position: sticky;
+    top: 0;
+}
+
+.navbar a{
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: rgb(221, 177, 136);
+}
+
+@media (max-widht: 800px) {
+    .navbar {
+        flex-direction: column;
+        position: unset;
+    }
+
+    .navbar a {
+        text-align: center;
+    }
+}
+
+/*Principal*/
+
+form{
+    padding: 40px;
+    background-color: bisque;
+    text-align: center;
+}
+
+main {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.image img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+article {
+    border-style: solid;
+    border-color:bisque;
+    border-width: 15px 30px; 
+    font-size: 10px;
+}
+
+.columna{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mitad1{
+    flex-basis: 50%;
+    background-color: bisque;
+}
+
+.mitad2{
+    flex-basis: 50%;
+    background-color: bisque;
+}
+
+.producto{
+    text-align: center;
+    color: white;
+    border-style: solid;
+    border-color: rgb(236, 198, 166);
+    background-color: rgb(236, 198, 166);
+}
+
+.prenda{
+    width: 650px;
+    transition: 0.5s all ease-in-out;
+}
+
+.prenda:hover{
+    transform: scale(1.05);
+}
+
+.nombre{
+    font-size: 40px;
+}
+
+.precio{
+    font-size: 30px;
+}
+
+.descripcion{
+    font-size: 20px;
+}
+
+.comprar{
+    font-size: 20px;
+    color: rgb(221, 177, 136);
+    border-style: solid;
+    background-color: white;
+    border-color: white;
+    margin: 30px;
+    transition: 0.5s all ease-in-out;
+    text-transform: uppercase;
+}
+
+.comprar:hover{
+    transform: scale(1.05);
+}
+
+@media (max-width: 800px) {
+    .principal {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    .image img{
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .producto {
+        width: auto;
+    }
+}
+
+/*footer*/
+
+.envios {
+    color: beige;
+    text-align: center;
+    background-color: rgb(236, 198, 166);
+}
+
+.redes {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(243, 196, 158);
+}
+
+.instagram {
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    footer{
+        width:fit-content
+    }
+}
+
+/*formulario*/
+
+label {
+    background-color: rgb(236, 198, 166);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 3ovw 20vw;
+    gap: 10px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2rem;
+    border: 5px double rgb(221, 177, 136);
+}
+
+legend{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+@media (max-width: 600px){
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+}
